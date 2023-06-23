@@ -87,7 +87,7 @@ class AlertView: UIView {
     }
 }
 
-extension AlertView: ViewCode {
+extension AlertView: RGDSViewCode {
     func setupHierarchy() {
         addSubview(dimmedView)
         addSubview(containerView)

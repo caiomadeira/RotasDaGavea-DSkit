@@ -6,7 +6,8 @@ import PackageDescription
 let package = Package(
     name: "RotasDaGaveaDSKit",
     defaultLocalization: "en",
-    platforms: [.iOS(.v13)],
+    platforms: [.iOS(.v13),
+                .macOS(.v11)],
     products: [
         // Products define the executables and libraries a package produces, and make them visible to other packages.
         .library(
@@ -23,7 +24,7 @@ let package = Package(
         .target(
             name: "RotasDaGaveaDSKit",
             dependencies: [],
-            path: "Sources", exclude: ["README.md"]),
+            path: "Sources", exclude: ["../README.md"]),
         .testTarget(
             name: "RotasDaGaveaDSKitTests",
             dependencies: ["RotasDaGaveaDSKit"]),
